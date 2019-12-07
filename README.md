@@ -25,6 +25,14 @@ HKEY_LOCAL_MACHINE\Software\RealVNC\WinVNC4\\
 "Password" = "hex:d7,a5,14,d8,c5,56,aa,de"
 ```
 
+If you need to read the password entries from the registry to a file, you could use a command similar to the following to generate a .reg file and then use an .ini parser to extract the entries from the file.
+
+```
+regedit.exe /E winvnc3.reg "HKEY_LOCAL_MACHINE\Software\ORL\WinVNC3\"
+regedit.exe /E winvnc4.reg "HKEY_LOCAL_MACHINE\Software\RealVNC\WinVNC4\"
+```
+
+
 ### Installing
 
 You must download and install to your project manually. If you are using this, open an issue and I'll publish to packagist so you can install with composer and automatically receive any future updates.
