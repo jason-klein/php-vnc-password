@@ -1,0 +1,23 @@
+{
+    "name": "jason-klein/php-vnc-password",
+    "description": "Use PHP to encrypt/decrypt the VNC password stored in your registry.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jason Klein",
+            "email": "code@my.jrklein.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {"JasonKlein\\PhpVncPassword\\":  "src/"}
+    },
+    "require": {
+        "ext-openssl": "*",
+        "php": ">=5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    }
+}
